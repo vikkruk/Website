@@ -1,0 +1,57 @@
+//Testimonies
+
+.three-way {
+  background-color: $light-bg-color;
+  padding: 100px 20px;
+  
+  .testimonials {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 45px;
+      font-weight: 500;
+    }
+
+    div {
+      margin-bottom: 50px;
+
+
+      img {
+        width: 200px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .three-way {
+    display: flex;
+    justify-content: center;
+    .testimonials {
+      display: flex;
+      flex-direction: column;
+      max-width: 1024px;
+      
+      .quotes {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 60px;
+
+        div {
+          max-width: 290px;
+        }
+      }
+    }
+  }
+}

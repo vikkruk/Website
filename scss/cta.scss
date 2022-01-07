@@ -1,0 +1,130 @@
+// CTA1
+
+.cta1 {
+  margin-top: 62px;
+  height: 550px;
+  background-image: url("../content/bg-masthead.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+
+  .cta1-wrap {
+    @include cta-wrap;
+
+    h1 {
+      color: white;
+      font-size: 2.6rem;
+      font-weight: 600;
+      margin-bottom: 45px;
+    }
+
+    .cta-fill {
+      input {
+        @include cta-input;
+
+      &::placeholder {
+        padding-left: 10px;
+      }
+      }
+
+      button {
+        background-color: $blue-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        height: 40px;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: inherit;
+
+        &:hover {
+          @include hover-button;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .cta-fill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    
+    input {
+      flex:5;
+    }
+
+    button {
+      flex: 1.5;
+      margin-top: 0;
+    }
+  }
+}
+
+// CTA 2
+
+.cta2 {
+  height: 450px;
+  background-image: url("../content/bg-masthead.jpg");
+  background-position: center;
+  background-size: 100% 100%;
+  display: flex;
+
+  .cta2-wrap {
+    @include cta-wrap;
+
+    h2 {
+      
+      color: white;
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 45px;
+    }
+
+    .cta2-fill {
+      input {
+        @include cta-input;
+
+      &::placeholder {
+        padding-left: 10px;
+      }
+      }
+
+      button {
+        background-color: $blue-color;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        height: 40px;
+        width: 100%;
+        font-size: 1.1rem;
+        font-family: inherit;
+
+        &:hover {
+          @include hover-button;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .cta2-fill {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    
+    input {
+      flex:5;
+    }
+
+    button {
+      flex: 1.5;
+      margin-top: 0;
+    }
+  }
+}

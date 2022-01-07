@@ -1,0 +1,29 @@
+@mixin hover-button {
+    cursor: pointer;
+        background: white;
+        color: $blue-color;
+        border: 1px solid $blue-color;
+        font-weight: 600;
+}
+
+@mixin cta-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 720px;
+    height: 100%;
+    margin: 0 auto;
+    padding:0 15px;
+}
+
+@mixin cta-input {
+    width: 100%;
+      height: 40px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      font-family: inherit;
+}

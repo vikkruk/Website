@@ -1,9 +1,2 @@
 $light-bg-color: #f8f9fa;
 $blue-color: #007bff;
-@mixin hover-button {
-    cursor: pointer;
-        background: white;
-        color: $blue-color;
-        border: 1px solid $blue-color;
-        font-weight: 600;
-}
